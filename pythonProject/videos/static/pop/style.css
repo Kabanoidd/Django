@@ -1,0 +1,9 @@
+body {
+    background-color: #93B874;
+}
+.card{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    align-items:center;
+}

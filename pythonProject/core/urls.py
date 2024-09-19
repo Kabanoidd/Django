@@ -3,8 +3,6 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
-from pythonProject.core import settings
-
 urlpatterns = [
     path('video/', include('videos.urls')),
     path('', include('main.urls')),

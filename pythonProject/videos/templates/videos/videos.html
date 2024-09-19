@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'pop/style.css' %}">
+</head>
+<body>
+    <h1><a href="../">Вернуться на главную</a></h1>
+    <div class="cards">
+        <div class="card">
+                <h2>{{ video.title }}</h2>
+                <video id="video" width="800px" height="400px" controls poster="{{video.thumbnail.url}}" src="{{video.source.url}}"></video>
+                <p>{{ video.description }}</p>
+        </div>
+    </div>
+    <script src="{% static 'pop/script.js' %}"></script>
+</body>
+</html>
